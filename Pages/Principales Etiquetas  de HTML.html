@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Title> Principales etiquetas de HTML</Title>
+	<style>
+		body
+		{
+			background-image: url("../Imagenes/outerspace-70.gif");
+			background-position: center;
+			font-family: helvetica;
+		}
+		h1
+		{
+			color: goldenrod;
+		}
+		p
+		{
+			color: palegreen;
+		}
+		strong
+		{
+			color: darkgrey;
+		}
+		h3
+		{
+			color: goldenrod;
+		}
+		h2
+		{
+			color: darkkhaki;
+		}
+		h4
+		{
+			color: goldenrod;
+		}
+		dd
+		{
+			color: palegreen;
+		}
+		document.write
+		{
+			color: palegreen;
+		}
+		b
+		{
+			color: palegreen;
+		}
+		A
+		{
+			color: goldenrod;
+		}
+		ul
+		{
+			color: palegreen;
+		}
+		code
+		{
+			color: darkgrey;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h1> Principales etiquetas de HTML utilizadas en la creación del
+website</h1>
+
+	<img src="../Imagenes/Etiquetas.png" width="300" height="300" title=" ETIQUETAS "/>
+	<p>	
+	<A HREF="../index.HTML" TARGET="_blank"> Autobiografía y Pensamientos </A></p>
+	<A HREF="Hardware Características y precios.html" TARGET="_blank"> Ver Equipo de computo Hardware que es utilizado actualmente por las empresas características y precios </A></p>
+	<p>	
+	<A HREF="Conceptos y recomendaciones de Seguridad H y S.html" TARGET="_blank"> Conceptos y recomendaciones de seguridad (Hardware y Software) para el buen funcionamiento de los equipos de computo </A></p>
+	<p>	
+	
+	<p>	
+	<A HREF="Ingeniero en sistemas y por que decidio estudiarlo.html" TARGET="_blank"> Que hace un ingeniero en sistemas y el motivo por el cual decidí estudiar esta profesión </A></p>
+	<h2>Etiquetas básicas en HTML</h2></center>
+	<ul><li><code>&lt;html&gt;</code>: define el inicio del documento HTML, le indica al <a href="/wiki/Navegador_web" title="Navegador web">navegador</a> que lo que viene a continuación debe ser interpretado como código HTML. Esto es así <i><a href="/wiki/De_facto" title="De facto">de facto</a></i>, ya que en teoría lo que define el tipo de documento es el <a href="/wiki/DOCTYPE" class="mw-redirect" title="DOCTYPE">DOCTYPE</a>, que significa la palabra justo tras DOCTYPE el tag de raíz.</li>
+<li><code>&lt;script&gt;</code>: incrusta un <a href="/wiki/Script" title="Script">script</a> en una web, o llama a uno mediante <code>src="url del script"</code>. Se recomienda incluir el <a href="/wiki/Multipurpose_Internet_Mail_Extensions" title="Multipurpose Internet Mail Extensions">tipo MIME</a> en el atributo <code>type</code>, en el caso de <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> <code>text/javascript</code>.</li>
+<li><code>&lt;head&gt;</code>: define la <a href="/wiki/Cabecera_(inform%C3%A1tica)" title="Cabecera (informática)">cabecera</a> del documento HTML; esta cabecera suele contener información sobre el documento que no se muestra directamente al <a href="/wiki/Usuario" class="mw-redirect" title="Usuario">usuario</a> como, por ejemplo, el título de la ventana del navegador. Dentro de la cabecera <code>&lt;head&gt;</code> es posible encontrar:
+<ul><li><code>&lt;title&gt;</code>: define el título de la página. Por lo general, el título aparece en la barra de título encima de la ventana.</li>
+<li><code>&lt;link&gt;</code>: para vincular el sitio a <a href="/wiki/Hojas_de_estilo_en_cascada" class="mw-redirect" title="Hojas de estilo en cascada">hojas de estilo</a> o iconos. Por ejemplo:<code>&lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</code>.</li>
+<li><code>&lt;style&gt;</code>: para colocar el estilo interno de la página; ya sea usando <a href="/wiki/Hojas_de_estilo_en_cascada" class="mw-redirect" title="Hojas de estilo en cascada">CSS</a> u otros lenguajes similares. No es necesario colocarlo si se va a vincular a un archivo externo usando la etiqueta <code>&lt;link&gt;</code>.</li>
+<li><code>&lt;meta&gt;</code>: para metadatos como la autoría o la licencia, incluso para indicar parámetros http (mediante <code>http-equiv=""</code>) cuando no se pueden modificar por no estar disponible la configuración o por dificultades con server-side scripting.</li></ul></li>
+<li><code>&lt;body&gt;</code>: define el contenido principal o cuerpo del documento. Esta es la parte del documento html que se muestra en el navegador; dentro de esta etiqueta pueden definirse propiedades comunes a toda la página, como <a href="/wiki/HTML_(colores)" class="mw-redirect" title="HTML (colores)">color</a> de fondo y márgenes. Dentro del cuerpo <code>&lt;body&gt;</code> es posible encontrar numerosas etiquetas. A continuación se indican algunas a modo de ejemplo:
+<ul><li><code>&lt;article&gt;</code>: Representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o re-utilizable.</li>
+<li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: encabezados o títulos del documento con diferente relevancia.</li>
+<li><code>&lt;table&gt;</code>: define una tabla.
+<ul><li><code>&lt;tr&gt;</code>: fila de una tabla.</li>
+<li><code>&lt;td&gt;</code>: celda de una tabla (debe estar dentro de una fila).</li></ul></li>
+<li><code>&lt;footer&gt;</code>&nbsp;: representa el pie de un documento o sección. La información que se suele añadir en este bloque es el autor del documento, enlaces a contenido relacionado, información de copyright, avisos legales, etc.</li>
+<li><code>&lt;a&gt;</code>: <a href="/wiki/Hiperv%C3%ADnculo" class="mw-redirect" title="Hipervínculo">hipervínculo</a> o enlace, dentro o fuera del <a href="/wiki/Sitio_web" title="Sitio web">sitio web</a>. Debe definirse el parámetro de pasada por medio del atributo <i>href</i>. Por ejemplo: <code>&lt;a&nbsp;href="http://www.example.com" title="Ejemplo" target="_blank" tabindex="1"&gt;Ejemplo&lt;/a&gt;</code> se representa como ejemplo.<sup id="cite_ref-14" class="reference separada"><a href="#cite_note-14"><span class="corchete-llamada">[</span>14<span class="corchete-llamada">]</span></a></sup>​</li>
+<li><code>&lt;div&gt;</code>: división de la página. Se recomienda, junto con css, en vez de <code>&lt;table&gt;</code> cuando se desea alinear contenido.</li>
+<li><code>&lt;img&gt;</code>: imagen. Requiere del atributo <i>src</i>, que indica la ruta en la que se encuentra la imagen. Por ejemplo: <code>&lt;img src="./imágenes/mifoto.jpg" /&gt;</code>. Es conveniente, por accesibilidad, poner un atributo <code>alt="texto alternativo"</code>.</li>
+<li><code>&lt;ol&gt;</code>: etiqueta para listas ordenadas.</li>
+<li><code>&lt;ul&gt;</code>: etiqueta para listas desordenadas.</li>
+<li><code>&lt;li&gt;</code>: etiqueta elementos de una lista.</li>
+<li><code>&lt;b&gt;</code>: texto en negrita (<i>etiqueta desaprobada. Se recomienda usar la etiqueta <code>&lt;strong&gt;</code></i>).</li>
+<li><code>&lt;i&gt;</code>: texto en cursiva (<i>etiqueta desaprobada. Se recomienda usar la etiqueta <code>&lt;em&gt;</code></i>).</li>
+<li><code>&lt;s&gt;</code>: texto tachado (<i>etiqueta desaprobada. Se recomienda usar la etiqueta <code>&lt;del&gt;</code></i>).</li>
+<li><code>&lt;u&gt;</code>: Antes texto subrayado. A partir de HTML 5 define porciones de texto diferenciadas o destacadas del resto, para indicar correcciones por ejemplo (etiqueta desaprobada en HTML 4.01 y redefinida en HTML 5).<sup id="cite_ref-15" class="reference separada"><a href="#cite_note-15"><span class="corchete-llamada">[</span>15<span class="corchete-llamada">]</span></a></sup>​<sup id="cite_ref-16" class="reference separada"><a href="#cite_note-16"><span class="corchete-llamada">[</span>16<span class="corchete-llamada">]</span></a></sup>​</li>
+<li><code>&lt;main&gt;</code>: división estructural de la página que engloba el contenido principal de la misma. Dentro de esta etiqueta, por ejemplo, encontramos los <code>&lt;article&gt;</code>.</li>
+<li><code>&lt;span&gt;</code>: Sirve para diferenciar un texto de otro.</li>
+<li><code>&lt;br&gt;</code>: Sirve para provocar un salto de línea. Esta etiqueta no se cierra.</li>
+<li><code>&lt;hr&gt;</code>: Sirve para provocar un cambio de tema entre párrafos. Esta etiqueta no se cierra.</li>
+<li><code>&lt;details&gt;</code>&nbsp;: Sirve para crear una sección desplegable</li>
+<li><code>&lt;summary&gt;</code>&nbsp;: Sirve para crear el título de la sección desplegable</li></ul></li></ul>
+</p>
+</body>
+</html>
